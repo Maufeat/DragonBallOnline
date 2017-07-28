@@ -1,0 +1,22 @@
+[Year:2016, Month:2, Day:5, Hour:22, Minute:34, Second:23]	Loading the configure is failed. LauncherConfig.xml, c:\games\dbz\client\dboclient\dboclient\tool\dbolauncher\dllocalconfig.cpp, 50
+
+[Year:2016, Month:2, Day:5, Hour:22, Minute:37, Second:40]	Downloading the file is failed. 5, dbo/PatchServerConfig.XML, DL_Temp/PatchServerConfig.XML, c:\games\dbz\client\dboclient\dboclient\tool\dbolauncher\dldownloadsys.cpp, 274
+
+[Year:2016, Month:2, Day:5, Hour:22, Minute:39, Second:56]	Downloading the file is failed. 5, dbo/PatchServerConfig.XML, DL_Temp/PatchServerConfig.XML, c:\games\dbz\client\dboclient\dboclient\tool\dbolauncher\dldownloadsys.cpp, 274
+
+[Year:2016, Month:2, Day:5, Hour:22, Minute:44, Second:47]	Loading the server version file is failed. DL_Temp\PatchVerList.XML, c:\games\dbz\client\dboclient\dboclient\tool\dbolauncher\dlpatchinfo.cpp, 474
+
+[Year:2016, Month:2, Day:5, Hour:22, Minute:45, Second:6]	Loading the server version file is failed. DL_Temp\PatchVerList.XML, c:\games\dbz\client\dboclient\dboclient\tool\dbolauncher\dlpatchinfo.cpp, 474
+
+[Year:2016, Month:2, Day:5, Hour:22, Minute:54, Second:10]	Loading the server version file is failed. DL_Temp\PatchVerList.XML, c:\games\dbz\client\dboclient\dboclient\tool\dbolauncher\dlpatchinfo.cpp, 398
+
+[Year:2016, Month:2, Day:5, Hour:22, Minute:54, Second:17]	Loading the server version file is failed. DL_Temp\PatchVerList.XML, c:\games\dbz\client\dboclient\dboclient\tool\dbolauncher\dlpatchinfo.cpp, 398
+
+[Year:2016, Month:2, Day:5, Hour:22, Minute:54, Second:27]	Loading the server version file is failed. DL_Temp\PatchVerList.XML, c:\games\dbz\client\dboclient\dboclient\tool\dbolauncher\dlpatchinfo.cpp, 398
+
+[Year:2016, Month:2, Day:5, Hour:22, Minute:54, Second:40]	Loading the server version file is failed. DL_Temp\PatchVerList.XML, c:\games\dbz\client\dboclient\dboclient\tool\dbolauncher\dlpatchinfo.cpp, 398
+
+[Year:2016, Month:2, Day:5, Hour:22, Minute:58, Second:58]	Loading the server version file is failed. DL_Temp\PatchVerList.XML, c:\games\dbz\client\dboclient\dboclient\tool\dbolauncher\dlpatchinfo.cpp, 398
+
+[Year:2016, Month:2, Day:5, Hour:22, Minute:59, Second:28]	Loading the server version file is failed. DL_Temp\PatchVerList.XML, c:\games\dbz\client\dboclient\dboclient\tool\dbolauncher\dlpatchinfo.cpp, 398
+

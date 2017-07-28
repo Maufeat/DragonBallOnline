@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug4ClientLocalizeCJIKor|Win32">
+      <Configuration>Debug4ClientLocalizeCJIKor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug4ClientLocalizeDev|Win32">
+      <Configuration>Debug4ClientLocalizeDev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release4ClientLocalizeCJIKor|Win32">
+      <Configuration>Release4ClientLocalizeCJIKor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release4ClientLocalizeDev|Win32">
+      <Configuration>Release4ClientLocalizeDev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1E11B94B-2C50-47FB-AB65-8EE9D9EF6D87}</ProjectGuid>
+    <RootNamespace>GUIEditor</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <EmbedManifest>false</EmbedManifest>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\extlib\xtp\Include;$(SolutionDir)..\extlib\dxsdk\include;$(SolutionDir)Renderware\Include;..\..\Lib\NtlCore;..\..\Lib\NtlFramework;..\..\Lib\NtlGui;$(SolutionDir)..\extlib\dxsdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;RWDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Ws2_32.lib;Winmm.lib;Imm32.lib;DevIL/lib/devil-d.lib;DevIL/lib/ilu-d.lib;DevIL/lib/ilut-d.lib;msimg32.lib;ddraw.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AllowIsolation>false</AllowIsolation>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Renderware\Include;..\..\Lib\NtlCore;..\..\Lib\NtlFramework;..\..\Lib\NtlGui;D:\Development\Pserver\DragonballOnline\DBOClient\extlib\dxsdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;RWDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Ws2_32.lib;Winmm.lib;Imm32.lib;DevIL/lib/devil-d.lib;DevIL/lib/ilu-d.lib;DevIL/lib/ilut-d.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Renderware\Include;..\..\Lib\NtlCore;..\..\Lib\NtlFramework;..\..\Lib\NtlGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;RWDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Ws2_32.lib;Winmm.lib;Imm32.lib;DevIL/lib/devil-d.lib;DevIL/lib/ilu-d.lib;DevIL/lib/ilut-d.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GUIControlView.cpp" />
+    <ClCompile Include="GUIDebugView.cpp" />
+    <ClCompile Include="GUIEditor.cpp" />
+    <ClCompile Include="GUIEditorDoc.cpp" />
+    <ClCompile Include="GUIFileInfoView.cpp" />
+    <ClCompile Include="GUIFileView.cpp" />
+    <ClCompile Include="GUIResourceView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CDevIL.cpp" />
+    <ClCompile Include="CDevILMFCMemDC.cpp" />
+    <ClCompile Include="KMMFCMemDC.cpp" />
+    <ClCompile Include="Control\AutoFont.cpp" />
+    <ClCompile Include="Control\BtnST.cpp" />
+    <ClCompile Include="Control\Dib.cpp" />
+    <ClCompile Include="DirTreeCtrl.cpp" />
+    <ClCompile Include="Control\RollupCtrl.cpp" />
+    <ClCompile Include="Control\Sizecbar.cpp" />
+    <ClCompile Include="Control\SizingTabCtrlBar.cpp" />
+    <ClCompile Include="SortStringArray.cpp" />
+    <ClCompile Include="Control\SXbutton.cpp" />
+    <ClCompile Include="Control\WBButton.cpp" />
+    <ClCompile Include="Control\N3Slider.cpp" />
+    <ClCompile Include="Control\PropTree.cpp" />
+    <ClCompile Include="Control\PropTreeInfo.cpp" />
+    <ClCompile Include="Control\PropTreeItem.cpp" />
+    <ClCompile Include="Control\PropTreeItemColor.cpp" />
+    <ClCompile Include="Control\PropTreeItemCombo.cpp" />
+    <ClCompile Include="Control\PropTreeItemEdit.cpp" />
+    <ClCompile Include="Control\PropTreeItemSlider.cpp" />
+    <ClCompile Include="Control\PropTreeItemStatic.cpp" />
+    <ClCompile Include="Control\PropTreeList.cpp" />
+    <ClCompile Include="CoordManager.cpp" />
+    <ClCompile Include="DataManager.cpp" />
+    <ClCompile Include="DirTreeCtrlMSC.cpp" />
+    <ClCompile Include="ExtFilter.cpp" />
+    <ClCompile Include="KMSelectBox.cpp" />
+    <ClCompile Include="FileViewDlg.cpp" />
+    <ClCompile Include="LayerMisc.cpp" />
+    <ClCompile Include="ResourceAttributeDlg.cpp" />
+    <ClCompile Include="ResourceLayer.cpp" />
+    <ClCompile Include="ResourceListDlg.cpp" />
+    <ClCompile Include="RectInfoDlg.cpp" />
+    <ClCompile Include="SurfaceAttributeDlg.cpp" />
+    <ClCompile Include="SurfaceLayer.cpp" />
+    <ClCompile Include="SurfaceListDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GUIControlView.h" />
+    <ClInclude Include="GUIDebugView.h" />
+    <ClInclude Include="GUIEditor.h" />
+    <ClInclude Include="GUIEditorDoc.h" />
+    <ClInclude Include="GUIFileInfoView.h" />
+    <ClInclude Include="GUIFileView.h" />
+    <ClInclude Include="GUIResourceView.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="CDevIL.h" />
+    <ClInclude Include="CDevILMFCMemDC.h" />
+    <ClInclude Include="KMMFCMemDC.h" />
+    <ClInclude Include="Control\AutoFont.h" />
+    <ClInclude Include="Control\btnst.h" />
+    <ClInclude Include="Control\Dib.h" />
+    <ClInclude Include="DirTreeCtrl.h" />
+    <ClInclude Include="Control\RollupCtrl.h" />
+    <ClInclude Include="Control\Sizecbar.h" />
+    <ClInclude Include="Control\SizingTabCtrlBar.h" />
+    <ClInclude Include="SortStringArray.h" />
+    <ClInclude Include="Control\SXbutton.h" />
+    <ClInclude Include="Control\WBButton.h" />
+    <ClInclude Include="Control\N3Slider.h" />
+    <ClInclude Include="Control\PropTree.h" />
+    <ClInclude Include="Control\PropTreeInfo.h" />
+    <ClInclude Include="Control\PropTreeItem.h" />
+    <ClInclude Include="Control\PropTreeItemColor.h" />
+    <ClInclude Include="Control\PropTreeItemCombo.h" />
+    <ClInclude Include="Control\PropTreeItemEdit.h" />
+    <ClInclude Include="Control\PropTreeItemSlider.h" />
+    <ClInclude Include="Control\PropTreeItemStatic.h" />
+    <ClInclude Include="Control\PropTreeList.h" />
+    <ClInclude Include="CoordManager.h" />
+    <ClInclude Include="DataManager.h" />
+    <ClInclude Include="DirTreeCtrlMSC.h" />
+    <ClInclude Include="ExtFilter.h" />
+    <ClInclude Include="KMSelectBox.h" />
+    <ClInclude Include="FileViewDlg.h" />
+    <ClInclude Include="LayerMisc.h" />
+    <ClInclude Include="ResourceAttributeDlg.h" />
+    <ClInclude Include="ResourceLayer.h" />
+    <ClInclude Include="ResourceListDlg.h" />
+    <ClInclude Include="RectInfoDlg.h" />
+    <ClInclude Include="SurfaceAttributeDlg.h" />
+    <ClInclude Include="SurfaceLayer.h" />
+    <ClInclude Include="SurfaceListDlg.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpadc.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpanisot.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpcollis.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpcriter.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpcrowd.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpdbgerr.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpdmorph.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpdpvs.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpenv.h" />
+    <ClInclude Include="..\..\Renderware\Include\rperror.h" />
+    <ClInclude Include="..\..\Renderware\Include\rphanim.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpid.h" />
+    <ClInclude Include="..\..\Renderware\Include\rplodatm.h" />
+    <ClInclude Include="..\..\Renderware\Include\rplogo.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpltmap.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpmatfx.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpmipkl.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpmorph.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpnormmap.h" />
+    <ClInclude Include="..\..\Renderware\Include\rppatch.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpprtadv.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpprtstd.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpptank.h" />
+    <ClInclude Include="..\..\Renderware\Include\rppvs.h" />
+    <ClInclude Include="..\..\Renderware\Include\rprandom.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpskin.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpspline.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpteam.h" />
+    <ClInclude Include="..\..\Renderware\Include\rptoon.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpusrdat.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpuvanim.h" />
+    <ClInclude Include="..\..\Renderware\Include\rpworld.h" />
+    <ClInclude Include="..\..\Renderware\Include\rt2d.h" />
+    <ClInclude Include="..\..\Renderware\Include\rt2danim.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtanim.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtbary.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtbezpat.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtbmp.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtcharse.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtcmpkey.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtdict.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtfsyst.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtgcond.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtgncpip.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtimport.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtintsec.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtltmap.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtltmapcnv.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtmipk.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtnormmap.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtpick.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtpitexd.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtpng.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtquat.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtras.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtray.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtskinsp.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtslerp.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtsplpvs.h" />
+    <ClInclude Include="..\..\Renderware\Include\rttiff.h" />
+    <ClInclude Include="..\..\Renderware\Include\rttilerd.h" />
+    <ClInclude Include="..\..\Renderware\Include\rttoc.h" />
+    <ClInclude Include="..\..\Renderware\Include\rttoon.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtvcat.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtwing.h" />
+    <ClInclude Include="..\..\Renderware\Include\rtworld.h" />
+    <ClInclude Include="..\..\Renderware\Include\rwcore.h" />
+    <ClInclude Include="..\..\Renderware\Include\rwplcore.h" />
+    <ClInclude Include="..\..\Renderware\Include\rwversion.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\expanddown.bmp" />
+    <None Include="res\expanddown_blue.bmp" />
+    <None Include="res\expandleft.bmp" />
+    <None Include="res\expandleft_blue.bmp" />
+    <None Include="res\fpoint.cur" />
+    <None Include="res\GUIEditor.ico" />
+    <None Include="res\GUIEditor.rc2" />
+    <None Include="res\GUIEditorDoc.ico" />
+    <None Include="res\Icon.bmp" />
+    <None Include="res\spliter.cur" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GUIEditor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\Renderware\Lib\debug\rpadc.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpanisot.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpcollis.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpcrowd.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpdmorph.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpenv.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rphanim.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpid.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rplodatm.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rplogo.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpltmap.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpmatfx.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpmipkl.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpmorph.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpnormmap.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpnormmapskin.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rppatch.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rppatchmatfx.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rppatchskin.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rppatchskinmatfx.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpprtadv.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpprtstd.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpptank.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rppvs.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rprandom.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpskin.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpskinmatfx.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpskinmatfxtoon.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpskintoon.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpspline.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpteam.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rptoon.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpusrdat.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpuvanim.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rpworld.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rt2d.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rt2danim.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtanim.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtbary.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtbezpat.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtbmp.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtcharse.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtcmpkey.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtdict.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtfsyst.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtgcond.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtgncpip.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtimport.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtintsec.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtltmap.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtltmapcnv.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtmipk.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtmipkmatfx.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtmipkpatch.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtmipkpatchmatfx.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtnormmap.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtpick.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtpitexd.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtpng.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtquat.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtras.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtray.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtskinsp.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtslerp.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtsplpvs.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rttiff.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rttilerd.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rttoc.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rttoon.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtwing.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rtworld.lib" />
+    <Library Include="..\..\Renderware\Lib\debug\rwcore.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="res\GUIEditor.manifest">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\NtlLib\Shared\NtlXMLLoader\NtlXMLLoader.vcxproj">
+      <Project>{9d941cac-4183-44e3-aec3-817c0a32d1dd}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Lib\NtlCore\NtlCore.vcxproj">
+      <Project>{2d91cafc-1814-4cb4-b844-4e55f937d051}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Lib\NtlGui\NtlGui.vcxproj">
+      <Project>{4cacaf6f-333c-4ac8-bb0e-ce8eee4b44a3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="GUIEditor.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

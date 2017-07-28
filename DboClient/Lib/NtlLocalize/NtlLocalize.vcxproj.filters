@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Precompile">
+      <UniqueIdentifier>{73d80565-777a-4147-8a4a-afeb6e9b4796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{5ba52996-3ae3-4ed9-9c84-04f2838e0607}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Precompile</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlLocalize.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlLocalizeCJ.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Precompile</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlLocalize.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlLocalizeCJ.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlLocalizeDef.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

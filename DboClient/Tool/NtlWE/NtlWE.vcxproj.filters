@@ -1,0 +1,961 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="App">
+      <UniqueIdentifier>{d709f465-3846-42a3-a942-748008dc47be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Manager">
+      <UniqueIdentifier>{52d608fb-f138-4088-bb53-4b19765aa561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Manager\UpdateEvent">
+      <UniqueIdentifier>{4b491acc-70e4-470d-9f0a-0fa5eece8147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Camera">
+      <UniqueIdentifier>{cdf7868e-276d-43e2-9bdd-9c1b0145a726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Base">
+      <UniqueIdentifier>{03af7c9b-7b88-4c22-b411-3ba2b2353d91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Property">
+      <UniqueIdentifier>{1c79180d-148d-433e-b224-bbcc1390b76e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Preview">
+      <UniqueIdentifier>{a004bab7-a9e1-4a8b-9ac9-a9f0485299f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Handler">
+      <UniqueIdentifier>{b5f0489f-d7b7-4d6d-b50e-d55e058a8d7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Handler\ShoreLine">
+      <UniqueIdentifier>{5077242c-0a9e-4ffe-b2d2-fd26b422753e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework">
+      <UniqueIdentifier>{b682a0cb-471b-4289-bb50-f046219a7b84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control">
+      <UniqueIdentifier>{545b203c-40f0-44a1-8832-04a6e3feb0ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Others">
+      <UniqueIdentifier>{f2437b4b-a77c-4db5-9eba-274bc080b36e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Others\Xml">
+      <UniqueIdentifier>{f8c0c11c-3537-447c-868a-c951f54fc355}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs">
+      <UniqueIdentifier>{addbc846-a83b-436e-9fe8-250cdfc2c389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs\Palette">
+      <UniqueIdentifier>{f0fb6a7c-a34f-48a4-8af3-e41d3bb6c0ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs\Palette\Spawn">
+      <UniqueIdentifier>{4174d3c9-50f3-47e2-aeb9-4904876d8259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs\Palette\Spawn\Path">
+      <UniqueIdentifier>{76d6b7ee-6857-4602-9c84-be6f038e18b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs\Palette\Performance">
+      <UniqueIdentifier>{cb73bad6-1ae8-4c12-8748-1630108707e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs\Palette\Water, Shoreline">
+      <UniqueIdentifier>{56ecb0f6-42c8-4fad-abf3-daa9644a24f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs\Palette\Light, Shadow">
+      <UniqueIdentifier>{b7333242-27ef-4628-8dd5-63f567cdfdd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs\Palette\Ornament, Decal,Plant">
+      <UniqueIdentifier>{e4aee79c-c41b-45c8-a494-fd532a4cbbca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs\Palette\Field, Merge, Sky Floating Entities">
+      <UniqueIdentifier>{edaf1e66-b1a5-428e-9758-f80ed0fd089f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs\Others">
+      <UniqueIdentifier>{c01ca9bf-9d8c-40e6-a66f-a9f2b2a7cf8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs\Others\Field Property">
+      <UniqueIdentifier>{1388a07f-5fef-4ad0-9bfe-02ae39fdacb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs\Others\Bookmark">
+      <UniqueIdentifier>{d5908bfa-d23e-4aba-8d58-273831de4455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs\Others\Block Property">
+      <UniqueIdentifier>{110f43b9-7e52-4dc6-b2cf-358305b83a37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs\PopUp">
+      <UniqueIdentifier>{b2ab9101-8bd8-4ea0-8e1d-6e69487b2e7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{90e772c9-4936-4953-9ae3-2afea761bdef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="History">
+      <UniqueIdentifier>{319f2343-ab4e-4d6e-9ae3-0bf65bddf3cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppConfigManager.cpp">
+      <Filter>App\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldUIManager.cpp">
+      <Filter>App\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeManager.cpp">
+      <Filter>App\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeUIManager.cpp">
+      <Filter>App\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniMapManager.cpp">
+      <Filter>App\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnManager.cpp">
+      <Filter>App\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateEvent.cpp">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateEventCompass.cpp">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateEventDojoPalette.cpp">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateEventLightObjectPalette.cpp">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateEventShortKey.cpp">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateEventTerrainPalette.cpp">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateEventThumbnail.cpp">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlCameraHelper.cpp">
+      <Filter>App\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlCameraTop.cpp">
+      <Filter>App\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlGameCamera.cpp">
+      <Filter>App\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWeAvatarController.cpp">
+      <Filter>App\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWeController.cpp">
+      <Filter>App\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWeControlUi.cpp">
+      <Filter>App\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWEApplication.cpp">
+      <Filter>App\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWEPropContainer.cpp">
+      <Filter>App\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWorldPropBaseTemplate.cpp">
+      <Filter>App\Property</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWorldPropBaseTemplateEx.cpp">
+      <Filter>App\Property</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWorldPropMaterialController.cpp">
+      <Filter>App\Property</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWorldPropNMapController.cpp">
+      <Filter>App\Property</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWorldPropSMapController.cpp">
+      <Filter>App\Property</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWorldPropUtil.cpp">
+      <Filter>App\Property</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWorldEntityPreview.cpp">
+      <Filter>App\Preview</Filter>
+    </ClCompile>
+    <ClCompile Include="DecalIOHandler.cpp">
+      <Filter>App\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="PathHandler.cpp">
+      <Filter>App\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanetIOHandler.cpp">
+      <Filter>App\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="ShoreLineAGenerator.cpp">
+      <Filter>App\Handler\ShoreLine</Filter>
+    </ClCompile>
+    <ClCompile Include="ShoreLineCP.cpp">
+      <Filter>App\Handler\ShoreLine</Filter>
+    </ClCompile>
+    <ClCompile Include="ShoreLineIOHandler.cpp">
+      <Filter>App\Handler\ShoreLine</Filter>
+    </ClCompile>
+    <ClCompile Include="ShoreLinePGenerator.cpp">
+      <Filter>App\Handler\ShoreLine</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWE.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWEDoc.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWEFrm.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWEView.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ctrl\CheckComboBox.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ctrl\ColourPicker.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ctrl\ColourPopup.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ctrl\ProgressWnd.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ctrl\SkinProgress.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ctrl\SplashScreenEx.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ctrl\SplashScreenFx.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ModelTool2\NtlMTXml.cpp">
+      <Filter>Others\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteEffect.cpp">
+      <Filter>Dialogs\Palette</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteGameProperty.cpp">
+      <Filter>Dialogs\Palette</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteNMProp.cpp">
+      <Filter>Dialogs\Palette</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteRegion.cpp">
+      <Filter>Dialogs\Palette</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteSE.cpp">
+      <Filter>Dialogs\Palette</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteTerrain.cpp">
+      <Filter>Dialogs\Palette</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteTrigger.cpp">
+      <Filter>Dialogs\Palette</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteUnit.cpp">
+      <Filter>Dialogs\Palette</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteSpawn.cpp">
+      <Filter>Dialogs\Palette\Spawn</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteSpawnBase.cpp">
+      <Filter>Dialogs\Palette\Spawn</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteSpawnMacro.cpp">
+      <Filter>Dialogs\Palette\Spawn</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteSpawnMacroModify.cpp">
+      <Filter>Dialogs\Palette\Spawn</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteSpawnSearch.cpp">
+      <Filter>Dialogs\Palette\Spawn</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteSpawnPath.cpp">
+      <Filter>Dialogs\Palette\Spawn\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="PalettePerformance.cpp">
+      <Filter>Dialogs\Palette\Performance</Filter>
+    </ClCompile>
+    <ClCompile Include="PalettePerformanceImposter.cpp">
+      <Filter>Dialogs\Palette\Performance</Filter>
+    </ClCompile>
+    <ClCompile Include="PalettePerformanceOcclusion.cpp">
+      <Filter>Dialogs\Palette\Performance</Filter>
+    </ClCompile>
+    <ClCompile Include="PalettePerformancePVS.cpp">
+      <Filter>Dialogs\Palette\Performance</Filter>
+    </ClCompile>
+    <ClCompile Include="PalettePerformanceSectorCull.cpp">
+      <Filter>Dialogs\Palette\Performance</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteShoreLine.cpp">
+      <Filter>Dialogs\Palette\Water, Shoreline</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteWater.cpp">
+      <Filter>Dialogs\Palette\Water, Shoreline</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteWaterTab.cpp">
+      <Filter>Dialogs\Palette\Water, Shoreline</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteLightAndShadow.cpp">
+      <Filter>Dialogs\Palette\Light, Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteLightMode.cpp">
+      <Filter>Dialogs\Palette\Light, Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteLightObject.cpp">
+      <Filter>Dialogs\Palette\Light, Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteShadow.cpp">
+      <Filter>Dialogs\Palette\Light, Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteSoftSpot.cpp">
+      <Filter>Dialogs\Palette\Light, Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteWorldLight.cpp">
+      <Filter>Dialogs\Palette\Light, Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteDecalDlg.cpp">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteDecalVolumeDlg.cpp">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteDojoDlg.cpp">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteHeatHazeDlg.cpp">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteOrnament.cpp">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteOrnamentTabDlg.cpp">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClCompile>
+    <ClCompile Include="PalettePlantDlg.cpp">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteFieldUI.cpp">
+      <Filter>Dialogs\Palette\Field, Merge, Sky Floating Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteSkyFloatingEntityDlg.cpp">
+      <Filter>Dialogs\Palette\Field, Merge, Sky Floating Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraAttrDlg.cpp">
+      <Filter>Dialogs\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldSearchDlg.cpp">
+      <Filter>Dialogs\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="FileNewDlg.cpp">
+      <Filter>Dialogs\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePropVisibleDlg.cpp">
+      <Filter>Dialogs\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="PathEngineExportDlg.cpp">
+      <Filter>Dialogs\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="PathMeshFindDlg.cpp">
+      <Filter>Dialogs\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="PeHeightPopup.cpp">
+      <Filter>Dialogs\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="SaberTestDlg.cpp">
+      <Filter>Dialogs\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="SaberView1.cpp">
+      <Filter>Dialogs\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="SaberView2.cpp">
+      <Filter>Dialogs\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="SaberView3.cpp">
+      <Filter>Dialogs\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldViewDlg.cpp">
+      <Filter>Dialogs\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="BGMPropDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="BloomPropDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldColorPropDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldHeatHazeDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldNamePropDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldsInformation.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldSoundPropDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="FogPropDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="LightPropDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialPropDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniMapPropDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyPropDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="SLPropDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="VisibilityDistPropDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="WeatherDlg.cpp">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClCompile>
+    <ClCompile Include="BookmarkDlg.cpp">
+      <Filter>Dialogs\Others\Bookmark</Filter>
+    </ClCompile>
+    <ClCompile Include="Bookmarker.cpp">
+      <Filter>Dialogs\Others\Bookmark</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePropDlg.cpp">
+      <Filter>Dialogs\Others\Block Property</Filter>
+    </ClCompile>
+    <ClCompile Include="DojoPropPopup.cpp">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectPropPopup.cpp">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjPropPopUp.cpp">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnGroupBasedPropDlg.cpp">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnMergeDlg.cpp">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnNestDlg.cpp">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnPopupDlg.cpp">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWEUtil.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlHistoryController.cpp">
+      <Filter>History</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppConfigManager.h">
+      <Filter>App\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldUIManager.h">
+      <Filter>App\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="MergeManager.h">
+      <Filter>App\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="MergeUIManager.h">
+      <Filter>App\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniMapManager.h">
+      <Filter>App\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnManager.h">
+      <Filter>App\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateEvent.h">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateEventCompass.h">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateEventDojoPalette.h">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateEventLightObjectPalette.h">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateEventShortKey.h">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateEventTerrainPalette.h">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateEventThumbnail.h">
+      <Filter>App\Manager\UpdateEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlCameraHelper.h">
+      <Filter>App\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlCameraTop.h">
+      <Filter>App\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlGameCamera.h">
+      <Filter>App\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWeAvatarController.h">
+      <Filter>App\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWeController.h">
+      <Filter>App\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWeControlUi.h">
+      <Filter>App\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWEApplication.h">
+      <Filter>App\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWEPropContainer.h">
+      <Filter>App\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWorldPropBaseTemplate.h">
+      <Filter>App\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWorldPropBaseTemplateEx.h">
+      <Filter>App\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWorldPropMaterialController.h">
+      <Filter>App\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWorldPropNMapController.h">
+      <Filter>App\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWorldPropSMapController.h">
+      <Filter>App\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWorldPropUtil.h">
+      <Filter>App\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWorldEntityPreview.h">
+      <Filter>App\Preview</Filter>
+    </ClInclude>
+    <ClInclude Include="DecalIOHandler.h">
+      <Filter>App\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="PathHandler.h">
+      <Filter>App\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanetIOHandler.h">
+      <Filter>App\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="ShoreLineAGenerator.h">
+      <Filter>App\Handler\ShoreLine</Filter>
+    </ClInclude>
+    <ClInclude Include="ShoreLineCP.h">
+      <Filter>App\Handler\ShoreLine</Filter>
+    </ClInclude>
+    <ClInclude Include="ShoreLineIOHandler.h">
+      <Filter>App\Handler\ShoreLine</Filter>
+    </ClInclude>
+    <ClInclude Include="ShoreLinePGenerator.h">
+      <Filter>App\Handler\ShoreLine</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWE.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWEDoc.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWEFrm.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWEView.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ctrl\CheckComboBox.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ctrl\ColourPicker.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ctrl\ColourPopup.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ctrl\ProgressWnd.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ctrl\SkinProgress.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ctrl\SplashScreenEx.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ctrl\SplashScreenFx.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ModelTool2\NtlMTXml.h">
+      <Filter>Others\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteEffect.h">
+      <Filter>Dialogs\Palette</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteGameProperty.h">
+      <Filter>Dialogs\Palette</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteNMProp.h">
+      <Filter>Dialogs\Palette</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteRegion.h">
+      <Filter>Dialogs\Palette</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteSE.h">
+      <Filter>Dialogs\Palette</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteTerrain.h">
+      <Filter>Dialogs\Palette</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteTrigger.h">
+      <Filter>Dialogs\Palette</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteUnit.h">
+      <Filter>Dialogs\Palette</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteSpawn.h">
+      <Filter>Dialogs\Palette\Spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteSpawnBase.h">
+      <Filter>Dialogs\Palette\Spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteSpawnMacro.h">
+      <Filter>Dialogs\Palette\Spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteSpawnMacroModify.h">
+      <Filter>Dialogs\Palette\Spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteSpawnSearch.h">
+      <Filter>Dialogs\Palette\Spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteSpawnPath.h">
+      <Filter>Dialogs\Palette\Spawn\Path</Filter>
+    </ClInclude>
+    <ClInclude Include="PalettePerformance.h">
+      <Filter>Dialogs\Palette\Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="PalettePerformanceImposter.h">
+      <Filter>Dialogs\Palette\Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="PalettePerformanceOcclusion.h">
+      <Filter>Dialogs\Palette\Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="PalettePerformancePVS.h">
+      <Filter>Dialogs\Palette\Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="PalettePerformanceSectorCull.h">
+      <Filter>Dialogs\Palette\Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteShoreLine.h">
+      <Filter>Dialogs\Palette\Water, Shoreline</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteWater.h">
+      <Filter>Dialogs\Palette\Water, Shoreline</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteWaterTab.h">
+      <Filter>Dialogs\Palette\Water, Shoreline</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteLightAndShadow.h">
+      <Filter>Dialogs\Palette\Light, Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteLightMode.h">
+      <Filter>Dialogs\Palette\Light, Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteLightObject.h">
+      <Filter>Dialogs\Palette\Light, Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteShadow.h">
+      <Filter>Dialogs\Palette\Light, Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteSoftSpot.h">
+      <Filter>Dialogs\Palette\Light, Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteWorldLight.h">
+      <Filter>Dialogs\Palette\Light, Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteDecalDlg.h">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteDecalVolumeDlg.h">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteDojoDlg.h">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteHeatHazeDlg.h">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteOrnament.h">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteOrnamentTabDlg.h">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClInclude>
+    <ClInclude Include="PalettePlantDlg.h">
+      <Filter>Dialogs\Palette\Ornament, Decal,Plant</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteFieldUI.h">
+      <Filter>Dialogs\Palette\Field, Merge, Sky Floating Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteSkyFloatingEntityDlg.h">
+      <Filter>Dialogs\Palette\Field, Merge, Sky Floating Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraAttrDlg.h">
+      <Filter>Dialogs\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldSearchDlg.h">
+      <Filter>Dialogs\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="FileNewDlg.h">
+      <Filter>Dialogs\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePropVisibleDlg.h">
+      <Filter>Dialogs\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="PathEngineExportDlg.h">
+      <Filter>Dialogs\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="PathMeshFindDlg.h">
+      <Filter>Dialogs\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="PeHeightPopup.h">
+      <Filter>Dialogs\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="SaberTestDlg.h">
+      <Filter>Dialogs\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="SaberView1.h">
+      <Filter>Dialogs\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="SaberView2.h">
+      <Filter>Dialogs\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="SaberView3.h">
+      <Filter>Dialogs\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldViewDlg.h">
+      <Filter>Dialogs\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="BGMPropDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="BloomPropDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldColorPropDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldHeatHazeDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldNamePropDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldsInformation.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldSoundPropDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="FogPropDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="LightPropDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialPropDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniMapPropDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyPropDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="SLPropDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="VisibilityDistPropDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="WeatherDlg.h">
+      <Filter>Dialogs\Others\Field Property</Filter>
+    </ClInclude>
+    <ClInclude Include="BookmarkDlg.h">
+      <Filter>Dialogs\Others\Bookmark</Filter>
+    </ClInclude>
+    <ClInclude Include="Bookmarker.h">
+      <Filter>Dialogs\Others\Bookmark</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePropDlg.h">
+      <Filter>Dialogs\Others\Block Property</Filter>
+    </ClInclude>
+    <ClInclude Include="DojoPropPopup.h">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectPropPopup.h">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjPropPopUp.h">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnGroupBasedPropDlg.h">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnMergeDlg.h">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnNestDlg.h">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnPopupDlg.h">
+      <Filter>Dialogs\PopUp</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWEUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlHistoryController.h">
+      <Filter>History</Filter>
+    </ClInclude>
+    <ClInclude Include="rpplugin.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Splash\BarAqua.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Splash\BarLuna.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Splash\BarPhoton.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Heightfield\CustomEditD.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Heightfield\CustomEditU.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\CustomizeD.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\CustomizeU.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\JustD.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\JustU.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\LowerD.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\LowerU.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\NoiseD.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\NoiseU.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\NtlWE.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\NtlWE.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\NtlWEDoc.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\PlateauD.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\PlateauU.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Heightfield\RaiseD.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\RaiseU.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\RoadD.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\RoadU.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Splash\SAVER_SPLASH00.BMP">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Splash\SAVER_SPLASH01.BMP">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Heightfield\SlopeD.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Heightfield\SlopeU.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\SmoothD.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\SmoothRangeD.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\SmoothRangeU.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\heightfield\SmoothU.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>Others</Filter>
+    </None>
+    <None Include="ReadMe.txt">
+      <Filter>Others</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NtlWE.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\NtlWE.manifest">
+      <Filter>Others</Filter>
+    </Manifest>
+  </ItemGroup>
+</Project>

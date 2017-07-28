@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="System">
+      <UniqueIdentifier>{9912d5b7-51ae-44ec-bea3-6ded8748e80b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Message">
+      <UniqueIdentifier>{0cbdab11-cc32-4e5b-940a-1fed59419cfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Event">
+      <UniqueIdentifier>{50ae20a7-4ef4-4797-bb6e-26ab8516dedf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\State">
+      <UniqueIdentifier>{d424cef2-932f-4853-a654-0a6981746cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Process">
+      <UniqueIdentifier>{190d50b3-695b-48bd-b192-b087b76eac96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Skin">
+      <UniqueIdentifier>{acd0e0e1-5c4c-4458-86c3-33fe1189d6a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Skin\Dev">
+      <UniqueIdentifier>{bed66a9b-95e5-4139-b36c-0e7d56468367}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Download">
+      <UniqueIdentifier>{645f722e-195a-416c-9e5b-4976683356e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Patch">
+      <UniqueIdentifier>{bc4d76df-7285-484f-8bf6-92cdd417001a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Integrity">
+      <UniqueIdentifier>{ce340a3b-3e7f-4080-85db-58181aa3d5c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{0a99ca63-a776-4eea-903b-be548ee011f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Data">
+      <UniqueIdentifier>{2bd8abdb-b0ef-4523-8a0e-dec8e6d474cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Utility">
+      <UniqueIdentifier>{b6c2fef0-f70c-47c1-bcb9-98e149517d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MFC">
+      <UniqueIdentifier>{d5be031c-3fc4-436e-a90e-a41d7e33bf08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\CheckSum">
+      <UniqueIdentifier>{99860392-9e6e-431e-a41c-ccb32ed034bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{4858b5c4-6e1b-4518-8931-31ee71da1464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{bdecd6b3-c83a-48e4-82bb-a05c70738525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Bitmap">
+      <UniqueIdentifier>{eccefd84-9c55-435f-8233-32535d7b2dfb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DLMessageDef.h">
+      <Filter>System\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="DLMessageImp.h">
+      <Filter>System\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="DLMessageSys.h">
+      <Filter>System\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="DLEventDef.h">
+      <Filter>System\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="DLEventSys.h">
+      <Filter>System\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="DLState.h">
+      <Filter>System\State</Filter>
+    </ClInclude>
+    <ClInclude Include="DLStateSys.h">
+      <Filter>System\State</Filter>
+    </ClInclude>
+    <ClInclude Include="DLProcessSys.h">
+      <Filter>System\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="DLSkinBaseDlg.h">
+      <Filter>System\Skin</Filter>
+    </ClInclude>
+    <ClInclude Include="DLSkinSys.h">
+      <Filter>System\Skin</Filter>
+    </ClInclude>
+    <ClInclude Include="DLSkinDlg_CJIKor.h">
+      <Filter>System\Skin\Dev</Filter>
+    </ClInclude>
+    <ClInclude Include="DLSkinDlg_Dev.h">
+      <Filter>System\Skin\Dev</Filter>
+    </ClInclude>
+    <ClInclude Include="DLDownLoadSys.h">
+      <Filter>System\Download</Filter>
+    </ClInclude>
+    <ClInclude Include="DLPatcherSys.h">
+      <Filter>System\Patch</Filter>
+    </ClInclude>
+    <ClInclude Include="DLIntegritySys.h">
+      <Filter>System\Integrity</Filter>
+    </ClInclude>
+    <ClInclude Include="DBOLauncherDef.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="patchwin.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DLAutoIntegrity.h">
+      <Filter>Common\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="DLCmdLine.h">
+      <Filter>Common\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLauncherDevMaster.h">
+      <Filter>Common\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLocalConfig.h">
+      <Filter>Common\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="DLPatchInfo.h">
+      <Filter>Common\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="DLPatchServerConfig.h">
+      <Filter>Common\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="DLUtility.h">
+      <Filter>Common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="BitmapDlg.h">
+      <Filter>Common\MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="Dib.h">
+      <Filter>Common\MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="explorer_information.h">
+      <Filter>Common\MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageTextButton.h">
+      <Filter>Common\MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputBox.h">
+      <Filter>Common\MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>Common\CheckSum</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5ChekSumErrCode.h">
+      <Filter>Common\CheckSum</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlMD5CheckSum.h">
+      <Filter>Common\CheckSum</Filter>
+    </ClInclude>
+    <ClInclude Include="DBOLauncher.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DLMessageImp.cpp">
+      <Filter>System\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="DLMessageSys.cpp">
+      <Filter>System\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="DLEventSys.cpp">
+      <Filter>System\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="DLState.cpp">
+      <Filter>System\State</Filter>
+    </ClCompile>
+    <ClCompile Include="DLStateSys.cpp">
+      <Filter>System\State</Filter>
+    </ClCompile>
+    <ClCompile Include="DLProcessSys.cpp">
+      <Filter>System\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="DLSkinBaseDlg.cpp">
+      <Filter>System\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="DLSkinSys.cpp">
+      <Filter>System\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="DLSkinDlg_CJIKor.cpp">
+      <Filter>System\Skin\Dev</Filter>
+    </ClCompile>
+    <ClCompile Include="DLSkinDlg_Dev.cpp">
+      <Filter>System\Skin\Dev</Filter>
+    </ClCompile>
+    <ClCompile Include="DLDownLoadSys.cpp">
+      <Filter>System\Download</Filter>
+    </ClCompile>
+    <ClCompile Include="DLPatcherSys.cpp">
+      <Filter>System\Patch</Filter>
+    </ClCompile>
+    <ClCompile Include="DLIntegritySys.cpp">
+      <Filter>System\Integrity</Filter>
+    </ClCompile>
+    <ClCompile Include="DLAutoIntegrity.cpp">
+      <Filter>Common\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DLCmdLine.cpp">
+      <Filter>Common\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLauncherDevMaster.cpp">
+      <Filter>Common\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLocalConfig.cpp">
+      <Filter>Common\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DLPatchInfo.cpp">
+      <Filter>Common\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DLPatchServerConfig.cpp">
+      <Filter>Common\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DLUtility.cpp">
+      <Filter>Common\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapDlg.cpp">
+      <Filter>Common\MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="Dib.cpp">
+      <Filter>Common\MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="explorer_information.cpp">
+      <Filter>Common\MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageTextButton.cpp">
+      <Filter>Common\MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputBox.cpp">
+      <Filter>Common\MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.c">
+      <Filter>Common\CheckSum</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlMD5CheckSum.cpp">
+      <Filter>Common\CheckSum</Filter>
+    </ClCompile>
+    <ClCompile Include="DBOLauncher.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\DBOLauncher.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\DBOLauncher.rc2">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\Background.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+    <None Include="res\ClosesBtnDown.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+    <None Include="res\ClosesBtnFocus.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+    <None Include="res\ClosesBtnUp.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+    <None Include="res\PachProgress.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+    <None Include="res\progress.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+    <None Include="res\StartBtnDown.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+    <None Include="res\StartBtnFocus.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+    <None Include="res\StartBtnStand.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+    <None Include="res\StartBtnUp.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+    <None Include="res\testBtnDown.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+    <None Include="res\testBtnFocus.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+    <None Include="res\testBtnStand.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+    <None Include="res\testBtnUp.bmp">
+      <Filter>Resource\Bitmap</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DBOLauncher.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

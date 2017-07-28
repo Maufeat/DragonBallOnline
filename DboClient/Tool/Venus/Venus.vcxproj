@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug4ClientLocalizeCJIKor|Win32">
+      <Configuration>Debug4ClientLocalizeCJIKor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug4ClientLocalizeDev|Win32">
+      <Configuration>Debug4ClientLocalizeDev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release4ClientLocalizeCJIKor|Win32">
+      <Configuration>Release4ClientLocalizeCJIKor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release4ClientLocalizeDev|Win32">
+      <Configuration>Release4ClientLocalizeDev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release4Client|Win32">
+      <Configuration>Release4Client</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{767AEC44-F8ED-475A-96EE-E95808EDD620}</ProjectGuid>
+    <RootNamespace>Venus</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release4Client|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release4Client|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\DBO_Resource\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\DragonBall\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release4Client|Win32'">..\..\..\..\DBO_Resource\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release4Client|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release4Client|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">true</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files %28x86%29\Microsoft DirectX SDK %28February 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files %28x86%29\Microsoft DirectX SDK %28February 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release4Client|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release4Client|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release4Client|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\extlib\xtp\Include;$(SolutionDir)..\extlib\dxsdk\Include;.\;.\Control;.\Gfl;.\Property;..\..\RenderWare\Include;..\..\Lib\NtlCore;..\..\Lib\NtlFramework;..\..\Lib\NtlPresentation;..\..\Lib\NtlSound;..\..\..\DboShared\NtlShared2;..\..\..\DboShared\NtlShared;..\..\..\DboShared\NtlGameTable;..\..\..\NtlLib\Shared\Util;..\..\..\NtlLib\Shared\NtlXMLLoader;..\..\..\NtlLib\Shared\NtlTrigger;$(SolutionDir)..\NtlLib\Shared\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;RWDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4996;4805;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rtray.lib;rtdict.lib;rtcharse.lib;rtfsyst.lib;rtbmp.lib;rtpng.lib;rtintsec.lib;rtpick.lib;rttoc.lib;rpcollis.lib;rpworld.lib;rwcore.lib;rtanim.lib;rphanim.lib;rtquat.lib;rplogo.lib;rpusrdat.lib;rpid.lib;rpmatfx.lib;rpuvanim.lib;rpprtstd.lib;rpprtadv.lib;rpptank.lib;rpskintoon.lib;rpskinmatfxtoon.lib;rtimport.lib;rtgcond.lib;rtwing.lib;rtslerp.lib;Winmm.lib;Imm32.lib;odbc32.lib;odbccp32.lib;GFx.lib;GFx_D3D9.lib;libjpeg.lib;rppvs.lib;rpltmap.lib;rtltmap.lib;rpmipkl.lib;rtpitexd.lib;rtbary.lib;rprandom.lib;ddraw.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>..\..\..\..\DBO_Resource\Venus.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\Gfl;..\..\Renderware\lib\debug;..\..\BugTrap;..\..\lib\NtlFlasher\lib\Win32\Msvc80\Debug_MT_Static;..\..\Lib\NtlFlasher\3rdParty\jpeg-6b\lib\Win32\Msvc80\Debug_MT_Static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <AdditionalIncludeDirectories>.\;.\Control;.\Gfl;.\Property;..\..\RenderWare\Include;..\..\Lib\NtlCore;..\..\Lib\NtlFramework;..\..\Lib\NtlPresentation;..\..\Lib\NtlSound;..\..\..\DboShared\NtlXMLLoader;..\..\..\DboShared\NtlShared2;..\..\..\DboShared\NtlShared;..\..\..\DboShared\NtlGameTable;..\..\..\NtlLib\Shared\Util;..\..\..\NtlLib\Shared\NtlXMLLoader;..\..\..\NtlLib\Shared\NtlTrigger;$(SolutionDir)..\NtlLib\Shared\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rtray.lib;rtdict.lib;rtcharse.lib;rtfsyst.lib;rtbmp.lib;rtpng.lib;rtintsec.lib;rtpick.lib;rttoc.lib;rpcollis.lib;rpworld.lib;rwcore.lib;rtanim.lib;rphanim.lib;rtquat.lib;rplogo.lib;rpusrdat.lib;rpid.lib;rpmatfx.lib;rpuvanim.lib;rpprtstd.lib;rpprtadv.lib;rpptank.lib;rpskintoon.lib;rpskinmatfxtoon.lib;rtimport.lib;rtgcond.lib;rtwing.lib;rtslerp.lib;Winmm.lib;Imm32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\DragonBall\Venus.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\Gfl;..\..\lib\NtlCore;..\..\Renderware\lib\Release;..\..\BugTrap;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release4Client|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <AdditionalIncludeDirectories>.\;.\Control;.\Gfl;.\Property;..\..\RenderWare\Include;..\..\Lib\NtlCore;..\..\Lib\NtlFramework;..\..\Lib\NtlPresentation;..\..\Lib\NtlSound;..\..\..\DboShared\NtlShared2;..\..\..\DboShared\NtlShared;..\..\..\DboShared\NtlGameTable;..\..\..\NtlLib\Shared\Util;..\..\..\NtlLib\Shared\NtlXMLLoader;..\..\..\NtlLib\Shared\NtlTrigger;$(SolutionDir)..\NtlLib\Shared\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4996;4805;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rtray.lib;rtdict.lib;rtcharse.lib;rtfsyst.lib;rtbmp.lib;rtpng.lib;rtintsec.lib;rtpick.lib;rttoc.lib;rpcollis.lib;rpworld.lib;rwcore.lib;rtanim.lib;rphanim.lib;rtquat.lib;rplogo.lib;rpusrdat.lib;rpid.lib;rpmatfx.lib;rpuvanim.lib;rpprtstd.lib;rpprtadv.lib;rpptank.lib;rpskintoon.lib;rpskinmatfxtoon.lib;rtimport.lib;rtgcond.lib;rtwing.lib;rtslerp.lib;Winmm.lib;Imm32.lib;odbc32.lib;odbccp32.lib;GFx.lib;GFx_D3D9.lib;libjpeg.lib;rppvs.lib;rpltmap.lib;rtltmap.lib;rpmipkl.lib;rtpitexd.lib;rtbary.lib;rprandom.lib;ddraw.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\DBO_Resource\Venus.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\Gfl;..\..\Renderware\lib\Release;..\..\BugTrap;..\..\lib\NtlFlasher\lib\Win32\Msvc80\Release_MT_Static;..\..\Lib\NtlFlasher\3rdParty\jpeg-6b\lib\Win32\Msvc80\Release_MT_Static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\..\..\..\DBO_Resource\Venus.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <AdditionalIncludeDirectories>.\;.\Control;.\Gfl;.\Property;..\..\RenderWare\Include;..\..\Lib\NtlCore;..\..\Lib\NtlFramework;..\..\Lib\NtlPresentation;..\..\Lib\NtlSound;..\..\..\DboShared\NtlShared2;..\..\..\DboShared\NtlShared;..\..\..\DboShared\NtlGameTable;..\..\..\NtlLib\Shared\Util;..\..\..\NtlLib\Shared\NtlXMLLoader;..\..\..\NtlLib\Shared\NtlTrigger;$(SolutionDir)..\NtlLib\Shared\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4996;4805;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rtray.lib;rtdict.lib;rtcharse.lib;rtfsyst.lib;rtbmp.lib;rtpng.lib;rtintsec.lib;rtpick.lib;rttoc.lib;rpcollis.lib;rpworld.lib;rwcore.lib;rtanim.lib;rphanim.lib;rtquat.lib;rplogo.lib;rpusrdat.lib;rpid.lib;rpmatfx.lib;rpuvanim.lib;rpprtstd.lib;rpprtadv.lib;rpptank.lib;rpskintoon.lib;rpskinmatfxtoon.lib;rtimport.lib;rtgcond.lib;rtwing.lib;rtslerp.lib;Winmm.lib;Imm32.lib;odbc32.lib;odbccp32.lib;GFx.lib;GFx_D3D9.lib;libjpeg.lib;rppvs.lib;rpltmap.lib;rtltmap.lib;rpmipkl.lib;rtpitexd.lib;rtbary.lib;rprandom.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\DBO_Resource\Venus.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\Gfl;..\..\Renderware\lib\Release;..\..\BugTrap;..\..\lib\NtlFlasher\lib\Win32\Msvc80\Release_MT_Static;..\..\Lib\NtlFlasher\3rdParty\jpeg-6b\lib\Win32\Msvc80\Release_MT_Static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <AdditionalIncludeDirectories>.\;.\Control;.\Gfl;.\Property;..\..\RenderWare\Include;..\..\Lib\NtlCore;..\..\Lib\NtlFramework;..\..\Lib\NtlPresentation;..\..\Lib\NtlSound;..\..\..\DboShared\NtlShared2;..\..\..\DboShared\NtlShared;..\..\..\DboShared\NtlGameTable;..\..\..\NtlLib\Shared\Util;..\..\..\NtlLib\Shared\NtlXMLLoader;..\..\..\NtlLib\Shared\NtlTrigger;$(SolutionDir)..\NtlLib\Shared\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4996;4805;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rtray.lib;rtdict.lib;rtcharse.lib;rtfsyst.lib;rtbmp.lib;rtpng.lib;rtintsec.lib;rtpick.lib;rttoc.lib;rpcollis.lib;rpworld.lib;rwcore.lib;rtanim.lib;rphanim.lib;rtquat.lib;rplogo.lib;rpusrdat.lib;rpid.lib;rpmatfx.lib;rpuvanim.lib;rpprtstd.lib;rpprtadv.lib;rpptank.lib;rpskintoon.lib;rpskinmatfxtoon.lib;rtimport.lib;rtgcond.lib;rtwing.lib;rtslerp.lib;Winmm.lib;Imm32.lib;odbc32.lib;odbccp32.lib;GFx.lib;GFx_D3D9.lib;libjpeg.lib;rppvs.lib;rpltmap.lib;rtltmap.lib;rpmipkl.lib;rtpitexd.lib;rtbary.lib;rprandom.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\DBO_Resource\Venus.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\Gfl;..\..\Renderware\lib\Release;..\..\BugTrap;..\..\lib\NtlFlasher\lib\Win32\Msvc80\Release_MT_Static;..\..\Lib\NtlFlasher\3rdParty\jpeg-6b\lib\Win32\Msvc80\Release_MT_Static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;.\Control;.\Gfl;.\Property;..\..\RenderWare\Include;..\..\Lib\NtlCore;..\..\Lib\NtlFramework;..\..\Lib\NtlPresentation;..\..\Lib\NtlSound;..\..\..\DboShared\NtlShared2;..\..\..\DboShared\NtlShared;..\..\..\DboShared\NtlGameTable;..\..\..\NtlLib\Shared\Util;..\..\..\NtlLib\Shared\NtlXMLLoader;..\..\..\NtlLib\Shared\NtlTrigger;$(SolutionDir)..\NtlLib\Shared\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;RWDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4996;4805;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rtray.lib;rtdict.lib;rtcharse.lib;rtfsyst.lib;rtbmp.lib;rtpng.lib;rtintsec.lib;rtpick.lib;rttoc.lib;rpcollis.lib;rpworld.lib;rwcore.lib;rtanim.lib;rphanim.lib;rtquat.lib;rplogo.lib;rpusrdat.lib;rpid.lib;rpmatfx.lib;rpuvanim.lib;rpprtstd.lib;rpprtadv.lib;rpptank.lib;rpskintoon.lib;rpskinmatfxtoon.lib;rtimport.lib;rtgcond.lib;rtwing.lib;rtslerp.lib;Winmm.lib;Imm32.lib;odbc32.lib;odbccp32.lib;GFx.lib;GFx_D3D9.lib;libjpeg.lib;rppvs.lib;rpltmap.lib;rtltmap.lib;rpmipkl.lib;rtpitexd.lib;rtbary.lib;rprandom.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>..\..\..\..\DBO_Resource\Venus.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\Gfl;..\..\Renderware\lib\debug;..\..\BugTrap;..\..\lib\NtlFlasher\lib\Win32\Msvc80\Debug_MT_Static;..\..\Lib\NtlFlasher\3rdParty\jpeg-6b\lib\Win32\Msvc80\Debug_MT_Static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;.\Control;.\Gfl;.\Property;..\..\RenderWare\Include;..\..\Lib\NtlCore;..\..\Lib\NtlFramework;..\..\Lib\NtlPresentation;..\..\Lib\NtlSound;..\..\..\DboShared\NtlShared2;..\..\..\DboShared\NtlShared;..\..\..\DboShared\NtlGameTable;..\..\..\NtlLib\Shared\Util;..\..\..\NtlLib\Shared\NtlXMLLoader;..\..\..\NtlLib\Shared\NtlTrigger;$(SolutionDir)..\NtlLib\Shared\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;RWDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4996;4805;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rtray.lib;rtdict.lib;rtcharse.lib;rtfsyst.lib;rtbmp.lib;rtpng.lib;rtintsec.lib;rtpick.lib;rttoc.lib;rpcollis.lib;rpworld.lib;rwcore.lib;rtanim.lib;rphanim.lib;rtquat.lib;rplogo.lib;rpusrdat.lib;rpid.lib;rpmatfx.lib;rpuvanim.lib;rpprtstd.lib;rpprtadv.lib;rpptank.lib;rpskintoon.lib;rpskinmatfxtoon.lib;rtimport.lib;rtgcond.lib;rtwing.lib;rtslerp.lib;Winmm.lib;Imm32.lib;odbc32.lib;odbccp32.lib;GFx.lib;GFx_D3D9.lib;libjpeg.lib;rppvs.lib;rpltmap.lib;rtltmap.lib;rpmipkl.lib;rtpitexd.lib;rtbary.lib;rprandom.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>..\..\..\..\DBO_Resource\Venus.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\Gfl;..\..\Renderware\lib\debug;..\..\BugTrap;..\..\lib\NtlFlasher\lib\Win32\Msvc80\Debug_MT_Static;..\..\Lib\NtlFlasher\3rdParty\jpeg-6b\lib\Win32\Msvc80\Debug_MT_Static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeCJIKor|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release4ClientLocalizeDev|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release4Client|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Venus.cpp" />
+    <ClCompile Include="VenusAPI.cpp" />
+    <ClCompile Include="VenusConfig.cpp" />
+    <ClCompile Include="VenusDoc.cpp" />
+    <ClCompile Include="VenusFrame.cpp" />
+    <ClCompile Include="VenusView.cpp" />
+    <ClCompile Include="Control\ColorButton.cpp" />
+    <ClCompile Include="DataTreeCtrl.cpp" />
+    <ClCompile Include="InputBox.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeCJIKor|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug4ClientLocalizeDev|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Splash.cpp" />
+    <ClCompile Include="Control\TrueColorToolBar.cpp" />
+    <ClCompile Include="VenusGridCtrl.cpp" />
+    <ClCompile Include="Control\MacButtons.cpp" />
+    <ClCompile Include="Control\MacProgressCtrl.cpp" />
+    <ClCompile Include="Control\MacSliderCtrl.cpp" />
+    <ClCompile Include="Control\AutoFont.cpp" />
+    <ClCompile Include="Control\BtnST.cpp" />
+    <ClCompile Include="Control\ComboInListView.cpp" />
+    <ClCompile Include="Control\Dib.cpp" />
+    <ClCompile Include="Control\listeditctrl.cpp" />
+    <ClCompile Include="Control\RollupCtrl.cpp" />
+    <ClCompile Include="Control\Sizecbar.cpp" />
+    <ClCompile Include="Control\SizingTabCtrlBar.cpp" />
+    <ClCompile Include="Control\supergridctrl.cpp" />
+    <ClCompile Include="Control\SXbutton.cpp" />
+    <ClCompile Include="Control\WBButton.cpp" />
+    <ClCompile Include="Control\ztimeline.cpp" />
+    <ClCompile Include="Property\N3Slider.cpp" />
+    <ClCompile Include="Property\PropTree.cpp" />
+    <ClCompile Include="Property\PropTreeInfo.cpp" />
+    <ClCompile Include="Property\PropTreeItem.cpp" />
+    <ClCompile Include="Property\PropTreeItemColor.cpp" />
+    <ClCompile Include="Property\PropTreeItemCombo.cpp" />
+    <ClCompile Include="Property\PropTreeItemEdit.cpp" />
+    <ClCompile Include="Property\PropTreeItemSlider.cpp" />
+    <ClCompile Include="Property\PropTreeItemStatic.cpp" />
+    <ClCompile Include="Property\PropTreeList.cpp" />
+    <ClCompile Include="ActionListCtrl.cpp" />
+    <ClCompile Include="ActionListDialog.cpp" />
+    <ClCompile Include="EffectEditLayer.cpp" />
+    <ClCompile Include="EffectListCtrl.cpp" />
+    <ClCompile Include="EffectListDialog.cpp" />
+    <ClCompile Include="EffectPropertyDialog.cpp" />
+    <ClCompile Include="NtlTreeXml.cpp" />
+    <ClCompile Include="VenusXMLDoc.cpp" />
+    <ClCompile Include="TextureInfoDialog.cpp" />
+    <ClCompile Include="TextureLayer.cpp" />
+    <ClCompile Include="TextureListDialog.cpp" />
+    <ClCompile Include="AnimationListDialog.cpp" />
+    <ClCompile Include="MeshLayer.cpp" />
+    <ClCompile Include="MeshListDialog.cpp" />
+    <ClCompile Include="UvAniListDialog.cpp" />
+    <ClCompile Include="PathLayer.cpp" />
+    <ClCompile Include="SplinePathListCtrl.cpp" />
+    <ClCompile Include="SplinePathListDialog.cpp" />
+    <ClCompile Include="SplinePathPropertyDialog.cpp" />
+    <ClCompile Include="AvatarPropertyDialog.cpp" />
+    <ClCompile Include="EnemyPropertyDialog.cpp" />
+    <ClCompile Include="EventLayer.cpp" />
+    <ClCompile Include="EventListCtrl.cpp" />
+    <ClCompile Include="EventListDialog.cpp" />
+    <ClCompile Include="CreateSplinePathDialog.cpp" />
+    <ClCompile Include="EditDialog.cpp" />
+    <ClCompile Include="InstanceEffectDialog.cpp" />
+    <ClCompile Include="LightDialog.cpp" />
+    <ClCompile Include="OptionDialog.cpp" />
+    <ClCompile Include="PostEffectDialog.cpp" />
+    <ClCompile Include="ProgressDialog.cpp" />
+    <ClCompile Include="StatusBarDialog.cpp" />
+    <ClCompile Include="StringDialog.cpp" />
+    <ClCompile Include="VenusPropertyContainer.cpp" />
+    <ClCompile Include="VenusPropertyContainer_Spline.cpp" />
+    <ClCompile Include="VenusCamera.cpp" />
+    <ClCompile Include="VenusFramework.cpp" />
+    <ClCompile Include="VenusGrid.cpp" />
+    <ClCompile Include="VenusVisualManager.cpp" />
+    <ClCompile Include="Manipulator.cpp" />
+    <ClCompile Include="MiniDump.cpp" />
+    <ClCompile Include="StringManager.cpp" />
+    <ClCompile Include="MeshListCtrl.cpp" />
+    <ClCompile Include="TextureListCtrl.cpp" />
+    <ClCompile Include="UpdateNewsDialog.cpp" />
+    <ClCompile Include="NtlLighting.cpp" />
+    <ClCompile Include="NtlLightingController.cpp" />
+    <ClCompile Include="NtlLightingStrip.cpp" />
+    <ClCompile Include="VenusEventBall.cpp" />
+    <ClCompile Include="VenusEventEnemy.cpp" />
+    <ClCompile Include="VenusPlayer.cpp" />
+    <ClCompile Include="VenusPlayerEvent.cpp" />
+    <ClCompile Include="VenusPlayerEventManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Venus.h" />
+    <ClInclude Include="VenusAPI.h" />
+    <ClInclude Include="VenusConfig.h" />
+    <ClInclude Include="VenusDefine.h" />
+    <ClInclude Include="VenusDoc.h" />
+    <ClInclude Include="VenusFrame.h" />
+    <ClInclude Include="VenusView.h" />
+    <ClInclude Include="Gfl\libgfl.h" />
+    <ClInclude Include="Gfl\libgfle.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Control\ColorButton.h" />
+    <ClInclude Include="DataTreeCtrl.h" />
+    <ClInclude Include="InputBox.h" />
+    <ClInclude Include="Splash.h" />
+    <ClInclude Include="Control\TrueColorToolBar.h" />
+    <ClInclude Include="VenusGridCtrl.h" />
+    <ClInclude Include="Control\MacButtons.h" />
+    <ClInclude Include="Control\MacProgressCtrl.h" />
+    <ClInclude Include="Control\MacSliderCtrl.h" />
+    <ClInclude Include="Control\AutoFont.h" />
+    <ClInclude Include="Control\btnst.h" />
+    <ClInclude Include="Control\ComboInListView.h" />
+    <ClInclude Include="Control\Dib.h" />
+    <ClInclude Include="Control\listeditctrl.h" />
+    <ClInclude Include="Control\RollupCtrl.h" />
+    <ClInclude Include="Control\Sizecbar.h" />
+    <ClInclude Include="Control\SizingTabCtrlBar.h" />
+    <ClInclude Include="Control\supergridctrl.h" />
+    <ClInclude Include="Control\SXbutton.h" />
+    <ClInclude Include="Control\WBButton.h" />
+    <ClInclude Include="Control\ztimeline.h" />
+    <ClInclude Include="Property\N3Slider.h" />
+    <ClInclude Include="Property\PropTree.h" />
+    <ClInclude Include="Property\PropTreeInfo.h" />
+    <ClInclude Include="Property\PropTreeItem.h" />
+    <ClInclude Include="Property\PropTreeItemColor.h" />
+    <ClInclude Include="Property\PropTreeItemCombo.h" />
+    <ClInclude Include="Property\PropTreeItemEdit.h" />
+    <ClInclude Include="Property\PropTreeItemSlider.h" />
+    <ClInclude Include="Property\PropTreeItemStatic.h" />
+    <ClInclude Include="Property\PropTreeList.h" />
+    <ClInclude Include="ActionListCtrl.h" />
+    <ClInclude Include="ActionListDialog.h" />
+    <ClInclude Include="EffectEditLayer.h" />
+    <ClInclude Include="EffectListCtrl.h" />
+    <ClInclude Include="EffectListDialog.h" />
+    <ClInclude Include="EffectPropertyDialog.h" />
+    <ClInclude Include="PropertyControlID.h" />
+    <ClInclude Include="NtlTreeXml.h" />
+    <ClInclude Include="VenusXMLDoc.h" />
+    <ClInclude Include="TextureInfoDialog.h" />
+    <ClInclude Include="TextureLayer.h" />
+    <ClInclude Include="TextureListDialog.h" />
+    <ClInclude Include="AnimationListDialog.h" />
+    <ClInclude Include="MeshLayer.h" />
+    <ClInclude Include="MeshListDialog.h" />
+    <ClInclude Include="UvAniListDialog.h" />
+    <ClInclude Include="PathLayer.h" />
+    <ClInclude Include="SplinePathListCtrl.h" />
+    <ClInclude Include="SplinePathListDialog.h" />
+    <ClInclude Include="SplinePathPropertyDialog.h" />
+    <ClInclude Include="AvatarPropertyDialog.h" />
+    <ClInclude Include="EnemyPropertyDialog.h" />
+    <ClInclude Include="EventLayer.h" />
+    <ClInclude Include="EventListCtrl.h" />
+    <ClInclude Include="EventListDialog.h" />
+    <ClInclude Include="CreateSplinePathDialog.h" />
+    <ClInclude Include="EditDialog.h" />
+    <ClInclude Include="InstanceEffectDialog.h" />
+    <ClInclude Include="LightDialog.h" />
+    <ClInclude Include="OptionDialog.h" />
+    <ClInclude Include="PostEffectDialog.h" />
+    <ClInclude Include="ProgressDialog.h" />
+    <ClInclude Include="StatusBarDialog.h" />
+    <ClInclude Include="StringDialog.h" />
+    <ClInclude Include="VenusPropertyContainer.h" />
+    <ClInclude Include="VenusCamera.h" />
+    <ClInclude Include="VenusFramework.h" />
+    <ClInclude Include="VenusGrid.h" />
+    <ClInclude Include="VenusVisualManager.h" />
+    <ClInclude Include="Manipulator.h" />
+    <ClInclude Include="MiniDump.h" />
+    <ClInclude Include="StringManager.h" />
+    <ClInclude Include="MeshListCtrl.h" />
+    <ClInclude Include="TextureListCtrl.h" />
+    <ClInclude Include="UpdateNewsDialog.h" />
+    <ClInclude Include="NtlLighting.h" />
+    <ClInclude Include="NtlLightingController.h" />
+    <ClInclude Include="NtlLightingStrip.h" />
+    <ClInclude Include="VenusEventBall.h" />
+    <ClInclude Include="VenusEventEnemy.h" />
+    <ClInclude Include="VenusPlayer.h" />
+    <ClInclude Include="VenusPlayerEvent.h" />
+    <ClInclude Include="VenusPlayerEventManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Gfl\libgfl.lib" />
+    <Library Include="Gfl\libgfle.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libgfl190.dll" />
+    <None Include="libgfle190.dll" />
+    <None Include="res\Animation.ico" />
+    <None Include="res\Category.ico" />
+    <None Include="res\CircleEmitter.ICO" />
+    <None Include="res\EffectListImage.bmp" />
+    <None Include="res\EmitterColor.ico" />
+    <None Include="res\EmitterSize.ico" />
+    <None Include="res\expanddown.bmp" />
+    <None Include="res\expanddown_blue.bmp" />
+    <None Include="res\expandleft.bmp" />
+    <None Include="res\expandleft_blue.bmp" />
+    <None Include="res\fpoint.cur" />
+    <None Include="res\PointEmitter.ICO" />
+    <None Include="res\ResourceEffect.ico" />
+    <None Include="res\ResourceParticle.ICO" />
+    <None Include="res\SphereEmitter.ICO" />
+    <None Include="res\spliter.cur" />
+    <None Include="res\TabImage.bmp" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="res\ToolbarDraw.bmp" />
+    <None Include="res\ToolbarDrawHot.bmp" />
+    <None Include="res\Venus.ico" />
+    <None Include="res\Venus.rc2" />
+    <None Include="res\VenusDoc.ico" />
+    <None Include="..\..\..\DragonBall\Tool\VenusData\VenusIcon.bmp" />
+    <None Include="res\VenusIcon.ico" />
+    <None Include="StringType.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Venus.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DboShared\NtlShared2\NtlShared.vcxproj">
+      <Project>{573eb1e4-7620-479e-8ccf-def06491545b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\NtlLib\Shared\NtlXMLLoader\NtlXMLLoader.vcxproj">
+      <Project>{9d941cac-4183-44e3-aec3-817c0a32d1dd}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\NtlLib\Shared\Util\Util.vcxproj">
+      <Project>{5229f8ae-a505-4077-b6d3-5ce0164dfe73}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Lib\NtlCore\NtlCore.vcxproj">
+      <Project>{2d91cafc-1814-4cb4-b844-4e55f937d051}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Lib\NtlFramework\NtlFramework.vcxproj">
+      <Project>{a2e4d1ec-1758-44e0-b3c9-955c286f84be}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Lib\NtlPresentation\NtlPresentation.vcxproj">
+      <Project>{0ec8e06b-8138-4bfd-8af7-9cad1f2f65ac}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Lib\NtlSound\NtlSound.vcxproj">
+      <Project>{ac4b3632-113d-40e1-b22f-0e6d9d1fd15a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Lib\Ntl_Plugin_World\Ntl_Plugin_World.vcxproj">
+      <Project>{837e47aa-e57b-46ff-b42f-26f23bcba8df}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Venus.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,22 @@
+[20:27:22 PM]	RWS::CEventId::~CEventId (136) : [ASSERT] CEventId::~CEventId g_EventToggleFullScreen not unlinked
+
+[21:06:34 PM]	RWS::CEventId::~CEventId (136) : [ASSERT] CEventId::~CEventId g_EventToggleFullScreen not unlinked
+
+[18:29:48 PM]	RWS::CEventId::~CEventId (136) : [ASSERT] CEventId::~CEventId g_EventToggleFullScreen not unlinked
+
+[22:45:49 PM]	CNtlApplication::Create (304) : [ASSERT] Engine open fail !!!
+
+[22:48:30 PM]	RWS::CEventId::~CEventId (136) : [ASSERT] CEventId::~CEventId g_EventToggleFullScreen not unlinked
+
+[22:54:17 PM]	RWS::CEventId::~CEventId (136) : [ASSERT] CEventId::~CEventId g_EventToggleFullScreen not unlinked
+
+[20:32:21 PM]	RWS::CEventId::~CEventId (136) : [ASSERT] CEventId::~CEventId g_EventToggleFullScreen not unlinked
+
+[15:42:48 PM]	RWS::CEventId::~CEventId (136) : [ASSERT] CEventId::~CEventId g_EventToggleFullScreen not unlinked
+
+[10:29:31 AM]	RWS::CEventId::~CEventId (136) : [ASSERT] CEventId::~CEventId g_EventToggleFullScreen not unlinked
+
+[11:38:14 AM]	RWS::CEventId::~CEventId (136) : [ASSERT] CEventId::~CEventId g_EventToggleFullScreen not unlinked
+
+[17:38:40 PM]	RWS::CEventId::~CEventId (136) : [ASSERT] CEventId::~CEventId g_EventToggleFullScreen not unlinked
+
