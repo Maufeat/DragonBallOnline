@@ -92,8 +92,6 @@ protected:
 	gui::CInputBox*		m_pAccountInput;			///< Account Input
 	gui::CInputBox*		m_pPasswardInput;			///< Passward Input
 
-	gui::CFlash*		m_pFlashBackground;
-
 	CSurfaceGui			m_srfInputDialogBack;		///< 인풋박스 배경
 	CSurfaceGui			m_NoticeUnderLine;			///< 공지사항 밑줄
 };

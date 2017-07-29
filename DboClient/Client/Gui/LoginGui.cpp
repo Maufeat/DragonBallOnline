@@ -54,10 +54,7 @@ RwBool CLogInGui::Create()
 	m_pThis = (gui::CDialog*)GetComponent("dlgMain");
 
 	CRectangle rect;
-
-	// 배경
-	m_pFlashBackground = (gui::CFlash*)GetComponent("flaBackground");
-
+	
 	// 동영상 재생 버튼
 	m_pCinemaButton = (gui::CButton*)GetComponent("CinemaButton");
 	m_pCinemaButton->SetTextFont(DEFAULT_FONT, 105, DEFAULT_FONT_ATTR);
@@ -154,7 +151,7 @@ RwBool CLogInGui::Create()
 
 	// sig
 	m_slotMove			= m_pThis->SigMove().Connect( this, &CLogInGui::OnMove );
-	m_slotPaint			= m_pFlashBackground->SigPaint().Connect( this, &CLogInGui::OnPaint );
+	m_slotPaint			= m_pThis->SigPaint().Connect( this, &CLogInGui::OnPaint );
 
 	GetNtlGuiManager()->AddUpdateFunc( this );
 
@@ -178,9 +175,7 @@ RwBool CLogInGui::Create()
 VOID CLogInGui::Destroy()
 {
 	NTL_FUNCTION("CLogInGui::Destroy");
-
-	m_pFlashBackground->Unload();
-	
+		
 	GetNtlGuiManager()->RemoveUpdateFunc( this );
 
 	GetInputActionMap()->SetActive( TRUE ); 
@@ -202,8 +197,6 @@ VOID CLogInGui::Update(RwReal fElapsed)
 {
 	if( IsShow() == FALSE )
 		return;
-
-	m_pFlashBackground->Update(fElapsed);
 }
 
 VOID CLogInGui::LocateComponent(RwInt32 iWidth, RwInt32 iHeight)
@@ -216,9 +209,7 @@ VOID CLogInGui::LocateComponent(RwInt32 iWidth, RwInt32 iHeight)
 	rect.bottom = iHeight;
 
 	m_pThis->SetPosition(rect);
-
-	m_pFlashBackground->SetPosition(rect);
-
+	
 	rect = m_pCinemaButton->GetPosition();
 	m_pCinemaButton->SetPosition(rect.left, iHeight - 196);
 
