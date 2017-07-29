@@ -675,32 +675,10 @@ VOID CCharMakePartGui::HandleEvents( RWS::CMsg &msg )
 
 		if( pEvent->byState == CHAR_STATE_MAKE_ENTER )
 		{
-			m_atAttributeChar[ATTIRIBUTE_SEX].byValue = GENDER_UNKNOWN;
 
-			// 종족 비활성화 여부 판단
-			for( RwUInt8 i = 0 ; i < DBO_ALLOWED_FUNC_FOR_DEV_COUNT ; ++i )
-			{
-				if( GetDboGlobal()->HaveFunction((eDBO_ALLOWED_FUNC_FOR_DEV)i) )
-				{
-					m_atAttributeChar[ATTIRIBUTE_RACE].byValue = i;
+			m_atAttributeChar[ATTIRIBUTE_RACE].byValue = 0;
+			m_atAttributeChar[ATTIRIBUTE_SEX].byValue = GENDER_MALE;
 
-					if( RACE_NAMEK == i )
-						m_atAttributeChar[ATTIRIBUTE_SEX].byValue	= GENDER_ONE_SEX;
-					else
-						m_atAttributeChar[ATTIRIBUTE_SEX].byValue	= GENDER_MALE;
-
-					break;
-				}
-			}
-			
-			if( GENDER_UNKNOWN == m_atAttributeChar[ATTIRIBUTE_SEX].byValue )
-			{
-				// 서버에서 모든 종족을 만들 수 없게 만든 경우이다
-				//EnableButtons(false);
-				EnableButtons(true);
-				NTL_RETURNVOID();
-			}
-			
 			UpdateAttribute();
 			CheckEnableButton();
 			ChangeModel(true);
