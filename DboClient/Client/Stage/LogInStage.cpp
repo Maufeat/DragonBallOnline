@@ -17,6 +17,9 @@
 #include "InputActionMap.h"
 #include "NtlStorageManager.h"
 
+// presentation
+#include "NtlPLResourcePack.h"
+#include "NtlCameraManager.h"
 
 // dbo
 #include "DboDef.h"
@@ -28,17 +31,142 @@
 #include "LogInGuiGroup.h"
 #include "LogInStageState.h"
 #include "AlarmManager.h"
+#include "CharStageState.h"
 
 #include "DboApplication.h"
 #include "MoviePlayer.h"
 
+namespace
+{
+// zoom mode
+#define dZOOM_NONE				0
+#define dZOOM_IN				1
+#define dZOOM_OUT				2
+};
+
 CLogInStage::CLogInStage(const char *pStageName)
 :CNtlStage(pStageName),
+m_pWorldEntity(NULL),
+m_bWorldAddCamera(FALSE),
 m_bAutoLogIn(FALSE),
 m_pState(NULL),
 m_pGuiGroup(NULL)
 {
-	
+	m_listZoomMode.clear();
+
+	// human child
+	m_CameraData[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_OUT].v3Pos.x = -347.356f;
+	m_CameraData[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_OUT].v3Pos.y = 52.825f;
+	m_CameraData[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_OUT].v3Pos.z = 325.413f;
+
+	m_CameraData[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_IN].v3Pos.x = -348.561f;
+	m_CameraData[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_IN].v3Pos.y = 52.54f;
+	m_CameraData[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_IN].v3Pos.z = 326.744f;
+
+	m_v3Dir[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_OUT].x = -348.027f;
+	m_v3Dir[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_OUT].y = 52.895f;
+	m_v3Dir[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_OUT].z = 326.154f;
+
+	m_v3Dir[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_IN].x = -349.232f;
+	m_v3Dir[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_IN].y = 52.61f;
+	m_v3Dir[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_IN].z = 327.485f;
+
+	// human adult
+	m_CameraData[RACE_HUMAN][CHT_ADULT][ZL_ZOOM_OUT]
+		= m_CameraData[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_OUT];
+
+	m_CameraData[RACE_HUMAN][CHT_ADULT][ZL_ZOOM_IN].v3Pos.x = -348.71f;
+	m_CameraData[RACE_HUMAN][CHT_ADULT][ZL_ZOOM_IN].v3Pos.y = 53.17f;
+	m_CameraData[RACE_HUMAN][CHT_ADULT][ZL_ZOOM_IN].v3Pos.z = 326.908f;
+
+	m_v3Dir[RACE_HUMAN][CHT_ADULT][ZL_ZOOM_OUT]
+		= m_v3Dir[RACE_HUMAN][CHT_CHILD][ZL_ZOOM_OUT];
+
+	m_v3Dir[RACE_HUMAN][CHT_ADULT][ZL_ZOOM_IN].x = -349.381f;
+	m_v3Dir[RACE_HUMAN][CHT_ADULT][ZL_ZOOM_IN].y = 53.24f;
+	m_v3Dir[RACE_HUMAN][CHT_ADULT][ZL_ZOOM_IN].z = 327.649f;
+
+	// namek child
+	m_CameraData[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_OUT].v3Pos.x = 474.044f;
+	m_CameraData[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_OUT].v3Pos.y = 52.802f;
+	m_CameraData[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_OUT].v3Pos.z = 297.184f;
+
+	m_CameraData[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_IN].v3Pos.x = 473.084f;
+	m_CameraData[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_IN].v3Pos.y = 52.45f;
+	m_CameraData[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_IN].v3Pos.z = 298.589f;
+
+	m_v3Dir[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_OUT].x = 473.484f;
+	m_v3Dir[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_OUT].y = 52.872f;
+	m_v3Dir[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_OUT].z = 298.004f;
+
+	m_v3Dir[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_IN].x = 472.524f;
+	m_v3Dir[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_IN].y = 52.52f;
+	m_v3Dir[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_IN].z = 299.409f;
+
+	// namek adult
+	m_CameraData[RACE_NAMEK][CHT_ADULT][ZL_ZOOM_OUT]
+		= m_CameraData[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_OUT];
+
+	m_CameraData[RACE_NAMEK][CHT_ADULT][ZL_ZOOM_IN].v3Pos.x = 472.856f;
+	m_CameraData[RACE_NAMEK][CHT_ADULT][ZL_ZOOM_IN].v3Pos.y = 53.422f;
+	m_CameraData[RACE_NAMEK][CHT_ADULT][ZL_ZOOM_IN].v3Pos.z = 298.924f;
+
+	m_v3Dir[RACE_NAMEK][CHT_ADULT][ZL_ZOOM_OUT]
+		= m_v3Dir[RACE_NAMEK][CHT_CHILD][ZL_ZOOM_OUT];
+
+	m_v3Dir[RACE_NAMEK][CHT_ADULT][ZL_ZOOM_IN].x = 472.296f;
+	m_v3Dir[RACE_NAMEK][CHT_ADULT][ZL_ZOOM_IN].y = 53.492f;
+	m_v3Dir[RACE_NAMEK][CHT_ADULT][ZL_ZOOM_IN].z = 299.744f;
+
+
+	// majin child
+	m_CameraData[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_OUT].v3Pos.x = 368.662f;
+	m_CameraData[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_OUT].v3Pos.y = 52.966f;
+	m_CameraData[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_OUT].v3Pos.z = -368.846f;
+
+	m_CameraData[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_IN].v3Pos.x = 367.596f;
+	m_CameraData[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_IN].v3Pos.y = 52.71f;
+	m_CameraData[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_IN].v3Pos.z = -367.788f;
+
+	m_v3Dir[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_OUT].x = 367.953f;
+	m_v3Dir[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_OUT].y = 53.001f;
+	m_v3Dir[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_OUT].z = -368.142f;
+
+	m_v3Dir[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_IN].x = 366.887f;
+	m_v3Dir[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_IN].y = 52.745f;
+	m_v3Dir[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_IN].z = -367.084f;
+
+	// majin adult
+	m_CameraData[RACE_MAJIN][CHT_ADULT][ZL_ZOOM_OUT]
+		= m_CameraData[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_OUT];
+
+	m_CameraData[RACE_MAJIN][CHT_ADULT][ZL_ZOOM_IN].v3Pos.x = 367.859f;
+	m_CameraData[RACE_MAJIN][CHT_ADULT][ZL_ZOOM_IN].v3Pos.y = 53.423f;
+	m_CameraData[RACE_MAJIN][CHT_ADULT][ZL_ZOOM_IN].v3Pos.z = -368.049f;
+
+	m_v3Dir[RACE_MAJIN][CHT_ADULT][ZL_ZOOM_OUT]
+		= m_v3Dir[RACE_MAJIN][CHT_CHILD][ZL_ZOOM_OUT];
+
+	m_v3Dir[RACE_MAJIN][CHT_ADULT][ZL_ZOOM_IN].x = 367.15f;
+	m_v3Dir[RACE_MAJIN][CHT_ADULT][ZL_ZOOM_IN].y = 53.458f;
+	m_v3Dir[RACE_MAJIN][CHT_ADULT][ZL_ZOOM_IN].z = -367.345f;
+
+	// None character
+	m_CameraData[dRACE_NONE][CHT_CHILD][ZL_ZOOM_OUT].v3Pos.x = -293.45f;
+	m_CameraData[dRACE_NONE][CHT_CHILD][ZL_ZOOM_OUT].v3Pos.y = 53.12f;
+	m_CameraData[dRACE_NONE][CHT_CHILD][ZL_ZOOM_OUT].v3Pos.z = -279.074f;
+
+	m_CameraData[dRACE_NONE][CHT_CHILD][ZL_ZOOM_IN].v3Pos.x = -294.509f;
+	m_CameraData[dRACE_NONE][CHT_CHILD][ZL_ZOOM_IN].v3Pos.y = 53.188f;
+	m_CameraData[dRACE_NONE][CHT_CHILD][ZL_ZOOM_IN].v3Pos.z = -279.966f;
+
+	m_v3Dir[dRACE_NONE][CHT_CHILD][ZL_ZOOM_OUT].x = -294.21f;
+	m_v3Dir[dRACE_NONE][CHT_CHILD][ZL_ZOOM_OUT].y = 53.189f;
+	m_v3Dir[dRACE_NONE][CHT_CHILD][ZL_ZOOM_OUT].z = -279.714f;
+
+	m_v3Dir[dRACE_NONE][CHT_CHILD][ZL_ZOOM_IN].x = -295.269f;
+	m_v3Dir[dRACE_NONE][CHT_CHILD][ZL_ZOOM_IN].y = 53.258f;
+	m_v3Dir[dRACE_NONE][CHT_CHILD][ZL_ZOOM_IN].z = -280.606f;
 }
 
 CLogInStage::~CLogInStage()
@@ -119,6 +247,19 @@ void CLogInStage::Destroy(void)
 	UnLinkMsg(g_EventLogInStageTimeOut);
 	UnLinkMsg(g_EventLoginMessage);
 
+
+	if (m_bWorldAddCamera)
+	{
+		RpWorldRemoveCamera(CNtlPLGlobal::m_pRpWorld, CNtlPLGlobal::m_RwCamera);
+		m_bWorldAddCamera = FALSE;
+	}
+
+	if (m_pWorldEntity)
+	{
+		GetSceneManager()->DeleteEntity(m_pWorldEntity);
+		m_pWorldEntity = NULL;
+	}
+
 	if(m_pGuiGroup)
 	{
 		m_pGuiGroup->Destroy();
@@ -133,6 +274,88 @@ void CLogInStage::Destroy(void)
 	GetInputActionMap()->UnLinkGameExit();
 
 	NTL_RETURNVOID();
+}
+
+void CLogInStage::DestroyBackGroundStage()
+{
+	if (m_bWorldAddCamera)
+	{
+		RpWorldRemoveCamera(CNtlPLGlobal::m_pRpWorld, CNtlPLGlobal::m_RwCamera);
+		m_bWorldAddCamera = FALSE;
+	}
+
+	if (m_pWorldEntity)
+	{
+		GetSceneManager()->DeleteEntity(m_pWorldEntity);
+		m_pWorldEntity = NULL;
+	}
+}
+
+void CLogInStage::CreateBackGroundStage()
+{
+	_getcwd(dGET_WORLD_PARAM()->CurWorkingFolderName, 256);
+	strcpy(dGET_WORLD_PARAM()->CurDefaultTexPath, dGET_WORLD_PARAM()->CurWorkingFolderName);
+	strcat(dGET_WORLD_PARAM()->CurDefaultTexPath, "\\texture\\ntlwe\\");
+
+	std::string str = "\\world\\";
+	str += "DBO_Select_Character";
+
+	strcpy(dGET_WORLD_PARAM()->WorldProjectFolderName, dGET_WORLD_PARAM()->CurWorkingFolderName);
+	strcat(dGET_WORLD_PARAM()->WorldProjectFolderName, str.c_str());
+
+	str += "\\";
+	str += "#######.gwp";
+
+	FILE* pFile = NULL;
+	SPackResFileData sPackFileData;
+	RwBool bPack = GetNtlResourcePackManager()->LoadTerrain(str.c_str(), sPackFileData);
+
+	if (bPack)
+	{
+		pFile = fopen(sPackFileData.strPackFileName.c_str(), "rb");
+		if (pFile)
+			fseek(pFile, sPackFileData.uiOffset, SEEK_SET);
+	}
+	else
+	{
+		std::string strWorldFileName = ".";
+		strWorldFileName += str;
+		pFile = fopen(strWorldFileName.c_str(), "rb");
+	}
+
+	// create a global world param
+	if (pFile)
+	{
+		LoadFileWorldState(dGET_WORLD_PARAM(), pFile);
+		fclose(pFile);
+	}
+
+	DBO_ASSERT(dNTL_WORLD_VERSION_COMPARE(dGET_WORLD_PARAM()->WorldVer, dNTL_WORLD_VERSION), "invalid world resource version. world(" << dGET_WORLD_PARAM()->WorldProjectFolderName << ") support_version(" << dNTL_WORLD_VERSION << ") resource_version(" << dGET_WORLD_PARAM()->WorldVer << ")");
+
+	m_pWorldEntity = static_cast<CNtlPLWorldEntity*>(GetSceneManager()->CreateEntity(PLENTITY_WORLD, "NtlWorld"));
+
+	m_vAvatarPos.x = -296.22f;
+	m_vAvatarPos.y = 52.477f;
+	m_vAvatarPos.z = -281.39f;
+
+	m_vCameraPos = m_CameraData[dRACE_NONE][CHT_CHILD][ZL_ZOOM_OUT].v3Pos;
+	m_vCameraPosAt = m_v3Dir[dRACE_NONE][CHT_CHILD][ZL_ZOOM_OUT];
+
+	m_pWorldEntity->CreateWorld(m_vAvatarPos);
+
+	RpWorldAddCamera(CNtlPLGlobal::m_pRpWorld, CNtlPLGlobal::m_RwCamera);
+	m_bWorldAddCamera = TRUE;
+
+	GetNtlGameCameraManager()->SetFov(60.f);
+}
+
+
+void CLogInStage::TeleportStage()
+{
+	m_pWorldEntity->SetPortalPosition(m_vAvatarPos);
+	m_pWorldEntity->SetPlayerPosition(m_vAvatarPos);
+	m_pWorldEntity->Update(0.8f);
+	API_PL_CameraLookAt(CNtlPLGlobal::m_RwCamera, &m_vCameraPos, &m_vCameraPosAt);
 }
 
 void CLogInStage::HandleEvents(RWS::CMsg &pMsg)
@@ -215,6 +438,8 @@ void CLogInStage::LoginStageStateEnter(RWS::CMsg &pMsg)
 	switch(eState)
 	{
 	case LOGIN_STATE_LOGO:
+		CreateBackGroundStage();
+		TeleportStage();
 		break;
 	case LOGIN_STATE_SERVER_CONNECT:
 		{
