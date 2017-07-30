@@ -88,6 +88,11 @@ public:
     int ActionPartyShareTargetMarking(unsigned int uiSlot);
     int ActionPartyShareTargetSelect(unsigned int uiSlot);
     int ActionPartyAutoSelect();
+	int ActionMapAirUp();
+	int ActionMapAirDown();
+	int ActionMapAirFreeDown();
+	int ActionMapAirFastDown();
+	int ActionMapAirBehavior();
 
 private:
 

@@ -93,6 +93,7 @@ protected:
 	gui::CInputBox*		m_pPasswardInput;			///< Passward Input
 
 	CSurfaceGui			m_srfInputDialogBack;		///< 인풋박스 배경
+	CSurfaceGui			m_srfLogo;
 	CSurfaceGui			m_NoticeUnderLine;			///< 공지사항 밑줄
 };
 

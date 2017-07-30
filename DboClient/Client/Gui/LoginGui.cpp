@@ -97,6 +97,7 @@ RwBool CLogInGui::Create()
 
 	// 인풋 박스 배경
 	m_srfInputDialogBack.SetSurface(GetNtlGuiManager()->GetSurfaceManager()->GetSurface( "Login.srf", "srfInputDialogBack" ));
+	m_srfLogo.SetSurface(GetNtlGuiManager()->GetSurfaceManager()->GetSurface("Login.srf", "srfLogo"));
 
 	// 공지사항 밑줄
 	m_NoticeUnderLine.SetSurface(GetNtlGuiManager()->GetSurfaceManager()->GetSurface( "Login.srf", "underLine" ));
@@ -128,13 +129,14 @@ RwBool CLogInGui::Create()
 	swprintf_s(awcBuffer, L"Ver %d.%d", CLIENT_LVER, CLIENT_RVER);
 	m_pVersion = NTL_NEW gui::CStaticBox( rect, m_pThis, GetNtlGuiManager()->GetSurfaceManager(), COMP_TEXT_RIGHT);
 	m_pVersion->CreateFontStd(DEFAULT_FONT, DEFAULT_FONT_SIZE, DEFAULT_FONT_ATTR);
-	m_pVersion->SetTextColor(RGB(0, 0, 0));
+	m_pVersion->SetTextColor(RGB(255, 255, 255));
 	m_pVersion->SetText(awcBuffer);
 	m_pVersion->Enable(false);
 
 	// Account Input
 	m_pAccountInput = (gui::CInputBox*)GetComponent( "AccountInput" );
 	m_pAccountInput->SetCaretSize(dINPUTBOX_CARET_WIDTH, dINPUTBOX_CARET_HEIGHT);
+	m_pAccountInput->SetTextColor(RGB(255, 255, 255));
 	m_pAccountInput->SetMaxLength(NTL_MAX_SIZE_USERID_UNICODE);
 	m_slotEnterAccount = m_pAccountInput->SigReturnPressed().Connect(this, &CLogInGui::PressEnder_in_AccountBox);
 
@@ -142,6 +144,7 @@ RwBool CLogInGui::Create()
 	m_pPasswardInput = (gui::CInputBox*)GetComponent( "PasswardInput" );
 	m_pPasswardInput->SetPasswordMode(TRUE);
 	m_pPasswardInput->SetCaretSize(dINPUTBOX_CARET_WIDTH, dINPUTBOX_CARET_HEIGHT);
+	m_pPasswardInput->SetTextColor(RGB(255, 255, 255));
 	m_pPasswardInput->SetMaxLength(NTL_MAX_SIZE_USERPW_UNICODE);
 	m_slotEnterPassward = m_pPasswardInput->SigReturnPressed().Connect(this, &CLogInGui::PressEnder_in_PasswarsBox);	
 
@@ -234,6 +237,9 @@ VOID CLogInGui::LocateComponent(RwInt32 iWidth, RwInt32 iHeight)
 	m_pPasswardInput->SetPosition(rect.left + 91, rect.top + 59);
 
 	m_NoticeUnderLine.SetPosition(iWidth - 251, iHeight - 311);
+
+	m_srfLogo.SetPosition(iWidth / 2 - m_srfLogo.GetWidth() / 2, 50);
+	m_srfLogo.GetRect(rect);
 
 	if( IsShow() )
 	{
@@ -380,6 +386,7 @@ VOID CLogInGui::OnMove(RwInt32 iOldX, RwInt32 iOldY)
 VOID CLogInGui::OnPaint()
 {
 	m_srfInputDialogBack.Render();
+	m_srfLogo.Render();
 	m_NoticeUnderLine.Render();
 }
 

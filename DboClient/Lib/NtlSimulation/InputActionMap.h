@@ -147,6 +147,11 @@ private:
 	CNtlCallbackParam1 *m_pCallTargetMarking;		///< Å¸°Ù ¸¶Å·
 	CNtlCallbackParam1 *m_pCallTargetSelecting;		///< Å¸°Ù ¼¿·ºÆÃ
 	CNtlCallbackParam1 *m_pCallChatPageChange;			///< Ã¤ÆÃ ÆäÀÌÁö (0 UP 1 DOWN)
+	CNtlCallbackParam1 *m_pCallAirUp;
+	CNtlCallbackParam1 *m_pCallAirDown;
+	CNtlCallbackParam1 *m_pCallAirFreeDown;
+	CNtlCallbackParam1 *m_pCallAirFastDown;
+	CNtlCallbackParam1 *m_pCallAirBehavior;
 	
 
 	RwUInt32	m_uiKey1MoveValidFlags;
@@ -294,6 +299,26 @@ public:
 	template <class Callbackclass>
 	void LinkChatPageChange(Callbackclass *cbclass,int ( Callbackclass::*callback)(unsigned int uiOption));
 	void UnLinkChatPageChane(void);
+
+	/*template <class Callbackclass>
+	void LinkAirUp(Callbackclass *cbclass,int ( Callbackclass::*callback)(unsigned int uiOption));
+	void UnLinkAirUp(void);
+
+	template <class Callbackclass>
+	void LinkAirDown(Callbackclass *cbclass, int (Callbackclass::*callback)(unsigned int uiOption));
+	void UnLinkAirDown(void);
+
+	template <class Callbackclass>
+	void LinkAirFreeDown(Callbackclass *cbclass, int (Callbackclass::*callback)(unsigned int uiOption));
+	void UnLinkAirUp(void);
+
+	template <class Callbackclass>
+	void LinkAirFastDown(Callbackclass *cbclass, int (Callbackclass::*callback)(unsigned int uiOption));
+	void UnLinkAirUp(void);
+
+	template <class Callbackclass>
+	void LinkAirBehavior(Callbackclass *cbclass, int (Callbackclass::*callback)(unsigned int uiOption));
+	void UnLinkAirBehavior(void);*/
 };
 
 static CInputActionMap* GetInputActionMap(void)
@@ -498,5 +523,13 @@ void CInputActionMap::LinkChatPageChange(Callbackclass *cbclass,int (Callbackcla
 	NTL_PRE( m_pCallChatPageChange == 0 );
 	m_pCallChatPageChange = NTL_NEW CNtlCallbackWidget1<Callbackclass>(cbclass,callback);
 }
+
+//Air/Fly
+/*template <class Callbackclass>
+void CInputActionMap::LinkAirUp(Callbackclass *cbclass, int (Callbackclass::*callback)(unsigned int))
+{
+	NTL_PRE(m_pCallKeyboardMove == 0);
+	m_pCallKeyboardMove = NTL_NEW CNtlCallbackWidget1<Callbackclass>(cbclass, callback);
+}*/
 
 #endif

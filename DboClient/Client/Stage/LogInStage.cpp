@@ -435,14 +435,17 @@ void CLogInStage::LoginStageStateEnter(RWS::CMsg &pMsg)
 	SDboEventLogInStageStateEnter *pStageStateEnter = reinterpret_cast<SDboEventLogInStageStateEnter*>(pMsg.pData);
 
 	ELogInStageState eState = (ELogInStageState)pStageStateEnter->byState;
+
 	switch(eState)
 	{
 	case LOGIN_STATE_LOGO:
-		CreateBackGroundStage();
-		TeleportStage();
 		break;
 	case LOGIN_STATE_SERVER_CONNECT:
 		{
+
+			CreateBackGroundStage();
+			TeleportStage();
+
 			// account server connect...
 			SConfigData *pConfigData = GetDboGlobal()->GetConfigData();  
 			SConnectData *pConnectData = GetDboGlobal()->GetConnectData();  
@@ -462,6 +465,7 @@ void CLogInStage::LoginStageStateEnter(RWS::CMsg &pMsg)
 	case LOGIN_STATE_SERVER_CONNECT_FAIL:
 		break;
 	case LOGIN_STATE_IDLE:
+
 		if(m_bAutoLogIn)
 		{
 			// 서버로 로그인 요청
